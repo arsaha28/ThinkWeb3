@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>ISO20022</h1>
+      <p>ISO 20022 is a global standard for electronic data interchange between financial institutions. It provides a common language and syntax for financial messages, enabling communication across borders and between different systems and applications.</p>
+      <br></br>
+      <h1>SEPA Transfer Steps</h1>
+    
+    <h2>Customer-to-Bank Transfer</h2>
+    <p>Here's an example of the steps involved in a customer-to-bank transfer using the SEPA Credit Transfer (SCT) scheme:</p>
+    
+    <ol>
+      <li>The customer initiates the payment instruction through their bank's online banking portal or other electronic channels.</li>
+      <li>The customer's bank validates the payment instruction and sends it to the clearing and settlement mechanism (CSM) responsible for processing SCT payments.</li>
+      <li>The CSM processes the payment instruction and sends it to the receiving bank.</li>
+      <li>The receiving bank credits the recipient's account with the payment amount.</li>
+      <li>The receiving bank sends a confirmation message (such as a PAIN.002 message) to the sending bank, indicating that the payment has been received and credited to the recipient's account.</li>
+      <li>The sending bank sends a confirmation message (such as an MT103 message) to the customer, indicating that the payment has been successfully processed and credited to the recipient's account.</li>
+    </ol>
+    <br></br>
+      <h2>PAIN Message Definition</h2>
+      <p>A PAIN message is a type of ISO 20022 message used for initiating and reporting payment transactions. PAIN stands for "Payments Initiation". PAIN messages are used in the Single Euro Payments Area (SEPA) and other regions to enable cross-border payments in a standardized and secure way.</p>
+      <p>There are two commonly used PAIN message types:</p>
+      <ul>
+        <li>PAIN.001: This message type is used for initiating credit transfers and direct debits.</li>
+        <li>PAIN.002: This message type is used for reporting on the status of credit transfers and direct debits.</li>
+      </ul>
+      <h2>PACS Message Definition</h2>
+      <p>PACS stands for "Payments Clearing and Settlement". It is a type of ISO 20022 message used for clearing and settlement of payment transactions. PACS messages are used in the Eurozone and other regions.</p>
+      <p>There are several PACS message types, including:</p>
+      <ul>
+        <li>PACS.002: This message type is used for reporting on the status of payment instructions.</li>
+        <li>PACS.004: This message type is used for indicating that a payment has been accepted or rejected by the receiving bank.</li>
+        <li>PACS.008: This message type is used for initiating a credit transfer.</li>
+        <li>PACS.009: This message type is used for initiating a direct debit.</li>
+      </ul>
+      <h2>CAMT Message Definition</h2>
+      <p>CAMT stands for "Cash Management". It is a type of ISO 20022 message used for cash management purposes, such as account reporting and payment reconciliation.</p>
+      <p>There are several CAMT message types, including:</p>
+      <ul>
+        <li>CAMT.052: This message type is used for account reporting of intraday balances.</li>
+        <li>CAMT.053: This message type is used for account reporting of end-of-day balances.</li>
+        <li>CAMT.054: This message type is used for account reporting of intraday transactions.</li>
+        <li>CAMT.055: This message type is used for account reporting of end-of-day transactions.</li>
+        <li>CAMT.029: This message type is used for reconciliation of payment-related information.</li>
+      </ul>
+    </div>
+     </body>
+</html>
